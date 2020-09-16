@@ -3,15 +3,17 @@ import { NavLink } from 'react-router-dom';
 
 function SavedList({ list }) {
   return (
-    <div>
+    <div className="saved-list">
       <h3> Saved Movies: </h3>
       { list.map( movie => {
+        console.log(movie, list)
         return (
           <NavLink
             to={ `/movies/${movie.id}` }
             key={ movie.id }
+            activeClassName="saved-active"
           >
-            <h3>{ movie.title }</h3>
+            <span className="saved-movie">{movie.title}</span>
           </NavLink>
         );
       })}

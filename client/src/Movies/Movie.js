@@ -28,7 +28,7 @@ function Movie({ addToSavedList, setMovieList, movies }) {
   };
 
   return (
-    <div>
+    <div className="save-wrapper">
       <MovieCard 
         movie={ movie } 
         movies={movies}

@@ -27,7 +27,7 @@ const MovieCard = ({ movie, movies, saveMovie, setMovieList }) => {
   };
 
   return (
-    <div onClick={navigateToMovie}>
+    <div className="movie-card" onClick={navigateToMovie}>
       <h2>{ movie.title }</h2>
       <div className="movie-director">
         Director: <em>{movie.director}</em>
